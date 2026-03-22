@@ -4,7 +4,7 @@ This project implements a  small foundational model from scratch named **NanoSoc
  based on a T5-like Encoder-Decoder Transformer architecture.
 ---
 
-## Project Structure
+## Project Structure 🏗️
 
 ```text
 NanoSocrates/
@@ -33,13 +33,13 @@ NanoSocrates/
 ```
 ---
 
-## Prerequisites
+## Prerequisites 📋
 
 - Python 3.10 or higher  
 - GPU with CUDA (recommended for training)
 ---
 
-## Setup Instructions
+## Setup Instructions ⚙️
 
 1. **Create and activate a virtual environment**  
    Run: `python -m venv .venv`  
@@ -50,7 +50,7 @@ NanoSocrates/
 
 ---
 
-## Dataset Preparation
+## Dataset Preparation 🧑🏻‍💻
 
 The dataset used for training and validation is stored in `data/dataset.jsonl`.  
 To rebuild it, run: `python src/database_creator.py`  
@@ -58,14 +58,14 @@ This script merges and cleans source files, then saves a unified dataset and the
 
 ---
 
-## Tokenizer Creation
+## Tokenizer Creation 📚
 
 (Re)train or adjust the tokenizer by running: `python src/tokenizer.py`  
 Tokenizer artifacts will be saved in the `tokenizer/` directory.
 
 ---
 
-## Training
+## Training 🏋🏻‍♂️
 
 From the project root (`NanoSocrates/`), start the training with:
 
@@ -77,7 +77,7 @@ All the hyperparameters can be set inside the get_config().
 
 --- 
 
-## Results
+## Results ✍🏼
 
 The results are available in the `results/` folder, outside this project. Due to time and hardware constraints, 
 a full validation was performed only every 20 epochs. 
